@@ -1,18 +1,101 @@
-## Getting Started
+# 📱 Desafio POO - Componente iPhone (Java + UML)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém a modelagem UML e a implementação em Java do componente **iPhone**, proposto como desafio prático na plataforma DIO.
 
-## Folder Structure
+O objetivo foi simular o comportamento de um iPhone clássico, com funcionalidades divididas em três áreas principais:
 
-The workspace contains two folders by default, where:
+* 🎵 Reprodutor Musical
+* 📞 Aparelho Telefônico
+* 🌐 Navegador na Internet
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 📌 Estrutura do Projeto
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+O projeto é baseado em **Programação Orientada a Objetos (POO)** e utiliza **interfaces** para representar funcionalidades distintas, que são então implementadas por uma única classe concreta (`IPhone`).
 
-## Dependency Management
+```
+📁 src/
+├── AparelhoTelefonico.java
+├── NavegadorInternet.java
+├── ReprodutorMusical.java
+└── IPhone.java
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## 🧹 Interfaces
+
+### 🎵 ReprodutorMusical
+
+```java
+void tocar();
+void pausar();
+void selecionarMusica(String musica);
+```
+
+### 📞 AparelhoTelefonico
+
+```java
+void ligar(String numero);
+void atender();
+void iniciarCorreioVoz();
+```
+
+### 🌐 NavegadorInternet
+
+```java
+void exibirPagina(String url);
+void adicionarNovaAba();
+void atualizarPagina();
+```
+
+---
+
+## 💻 Implementação da Classe `IPhone`
+
+A classe `IPhone` implementa todas as interfaces e simula o comportamento de cada funcionalidade, exibindo mensagens no terminal para cada método chamado.
+
+---
+
+## 📝 Exemplo de Uso
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        IPhone iphone = new IPhone();
+
+        iphone.tocar();
+        iphone.selecionarMusica("Imagine - John Lennon");
+
+        iphone.ligar("99999-9999");
+        iphone.atender();
+
+        iphone.exibirPagina("https://www.apple.com");
+        iphone.atualizarPagina();
+    }
+}
+```
+
+---
+
+## 🧬 Conceitos Aplicados
+
+* Programação Orientada a Objetos
+* Abstração com Interfaces
+* Encapsulamento
+* Responsabilidade Única
+* Implementação em Java
+
+---
+
+## 📷 Diagrama UML
+
+> Veja abaixo a representação UML do projeto:
+
+![Diagrama UML do iPhone](./diagrama_uml_iphone.png)
+
+---
+
+
+
