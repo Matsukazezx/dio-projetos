@@ -43,3 +43,22 @@ A seguir, serão descritas as etapas do projeto:
 - **Descrição de caso de uso:** Identificação de gargalos e uso excessivo de recursos, permitindo ajustes proativos e evitando sobreprovisionamento.
 
 ---
+
+## Conclusão
+
+A implementação de ferramentas na empresa **Abstergo Industries** trouxe como benefícios esperados a **redução de custos operacionais**, **melhoria na escalabilidade dos serviços** e **automatização de processos críticos**, o que aumentará a eficiência e a produtividade da empresa.  
+Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
+
+---
+
+## Anexos
+
+- Manual de uso do Amazon S3  
+- Documentação de funções Lambda utilizadas  
+- Planilha de métricas geradas pelo CloudWatch  
+- Relatório de custos antes e depois da implementação
+
+**Assinatura do Responsável pelo Projeto:**  
+Vitor Augusto
+
+
